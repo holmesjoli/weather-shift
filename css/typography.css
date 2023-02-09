@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Star300';
+    src: url('../assets/fonts/Star3000.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Star300';
+    src: url('../assets/fonts/Star3000\ Heavy.ttf') format('truetype');
+    font-weight: 400;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Star300Outline';
+    src: url('../assets/fonts/Outlines/Star3000\ Outline.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+}
+
+.title {
+    font-family: Star300;
+    font-size: 2rem;
+}
+
+.date {
+    font-family: Star300Outline;
+}
