@@ -10,7 +10,11 @@ header {
 main {
     background: white;
 }
-  
+
+.content {
+    background: linear-gradient(-135deg, #3F1A82 55%, #FF5838);
+}
+
 footer {
     background: wheat;
     padding: 2rem;
