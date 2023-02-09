@@ -21,7 +21,18 @@ footer {
     text-align: center;
 }
 
+#title {
+    color: #2D125C;
+    text-shadow: 2px 2px 2px grey;
+}
+
 #date {
     color: #2D125C;
     text-shadow: 2px 2px 2px grey;
+}
+
+p {
+    padding: 20px 50px;
+    background-color: rgb(255, 255, 255, .25);
+    border-radius: 10px;
 }
