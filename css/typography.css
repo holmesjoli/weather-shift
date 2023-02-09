@@ -23,11 +23,11 @@ body {
     font-family: system-ui, sans-serif;
 }
 
-.title {
+#title {
     font-family: Star300;
     font-size: 2rem;
 }
 
-.date {
+#date {
     font-family: Star300Outline;
 }
