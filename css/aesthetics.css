@@ -36,3 +36,9 @@ p {
     background-color: rgb(255, 255, 255, .25);
     border-radius: 10px;
 }
+
+#audio {
+    border: 2px solid #FF9E8C;
+    border-radius: 5px;
+    padding: 5px;
+}
