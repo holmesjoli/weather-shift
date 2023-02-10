@@ -7,11 +7,17 @@ body {
 header {
     margin: 15px 15px 0px 15px;
     padding: 30px 20px;
+    display: flex; 
+    flex-direction: row;
 }
 
 main {
     margin: 0 15px;
     padding: 30px 20px;
+}
+
+h2 {
+    margin-left: auto;
 }
 
 p {

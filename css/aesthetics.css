@@ -21,12 +21,12 @@ footer {
     text-align: center;
 }
 
-#title {
+h1 {
     color: #2D125C;
     text-shadow: 2px 2px 2px grey;
 }
 
-#date {
+h2 {
     color: #2D125C;
     text-shadow: 2px 2px 2px grey;
 }
