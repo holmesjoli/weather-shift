@@ -25,14 +25,17 @@ p {
 }
 
 .content {
-    height: 100vh;
+    min-height: 100vh;
     padding: 15px;
 }
 
 .dnd {
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    margin: 10px 100px;
 }
+
 .drop-container {
     display: flex;
     flex-direction: column;

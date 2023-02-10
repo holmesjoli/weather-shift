@@ -68,3 +68,9 @@ p {
     border: 1px dashed #FF9E8C;
     border-radius: 10px;
 }
+
+.drop-item p {
+    background-color: #FFEEEB;
+    color: #FF5838;
+    margin: 5px;
+}
