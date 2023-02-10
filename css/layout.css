@@ -28,3 +28,17 @@ p {
     height: 100vh;
     padding: 15px;
 }
+
+.dnd {
+    display: flex;
+    flex-direction: column;
+}
+.drop-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.drop-item {
+    display: flex;
+    flex-direction: row;
+}
