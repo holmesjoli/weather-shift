@@ -41,6 +41,7 @@ p {
     border: 2px solid #FF9E8C;
     border-radius: 5px;
     padding: 5px;
+    background-color: #FAFAFA;
 }
 
 .dnd {
