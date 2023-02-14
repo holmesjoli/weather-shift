@@ -54,3 +54,7 @@ p {
     grid-template-columns: 1fr minmax(150px, 25%);
     min-height: 100px;
 }
+
+img {
+    width: 50px;
+}

@@ -26,9 +26,11 @@ function addTerms(data) {
         .attr("draggable", "true")
         .attr("ondragstart", "drag(event)");
 
+
+    console.log(data)
     groups
         .append("img")
-        .attr("src", d => `assets/images/ccef/${d.gif}.gif`)
+        .attr("src", d => `assets/images/${d.folder}/${d.gif}.gif`)
 
     groups
         .append("div")
