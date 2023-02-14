@@ -63,7 +63,8 @@ p {
     border-color: #ff5838;
 }
 
-.drag-item:hover {
+.drag-item:hover,
+.drop:hover {
     border-color: #7e66ab;
 } 
 
@@ -83,4 +84,8 @@ p {
     color: #FF5838;
     margin: 5px;
     filter: drop-shadow(#b2b2b2 5px 5px 4px);
+}
+
+.term-description:hover {
+    font-weight: bold;
 }
