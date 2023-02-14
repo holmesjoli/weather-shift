@@ -66,6 +66,10 @@ p {
     border-color: #ff5838;
 }
 
+.drag-item:hover {
+    border-color: #7e66ab;
+} 
+
 .drop {
     background-color: #F4F4F4;
     border: 1px dashed #FF9E8C;
