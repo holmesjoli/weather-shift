@@ -14,7 +14,7 @@ function drop(ev) {
     ev.target.appendChild(document.getElementById(data));
 }
 
-
+//
 function addTerms(data) {
     let container = d3.select("#drag-container");
 
@@ -31,16 +31,12 @@ function addTerms(data) {
         .attr("class", "term-name")
         .text(d => d.name);
 
-    groups.
-        append("img")
+    groups
+        .append("img")
         .attr("src", "assets/images/ccef/Freezing-Rain.gif")
-
-
-//     <div id="drag1" class="drag" draggable="true" ondragstart="drag(event)">
-//     <img src="assets/images/ccef/Freezing-Rain.gif">
-// </div>
 }
 
+//
 function addDefinitions(data) {
 
     let container = d3.select("#drop-container");
@@ -60,7 +56,6 @@ function addDefinitions(data) {
         .attr("class", "drop")
         .attr("ondrop", "drop(event)")
         .attr("ondragover", "allowDrop(event)");
-
 }
 
 function main() {

@@ -48,8 +48,9 @@ p {
     background-color: white;
 }
 
-.drag, .drop {
-    margin: 10px;
+.drag, 
+.drop {
+    margin: 5px;
     padding: 10px;
 }
 
@@ -67,14 +68,19 @@ p {
 } 
 
 .drop {
-    background-color: #F4F4F4;
-    border: 1px dashed #FF9E8C;
+    background-color: #FAFAFA;
+    border: 1px dashed #b2b2b2;
     border-style: inset;
     border-width: 5px;
 }
 
-.drop-item p {
-    background-color: #FFEEEB;
+.term-name {
+    font-weight: bold;
+}
+
+.term-description {
+    background-color: #FAFAFA;
     color: #FF5838;
     margin: 5px;
+    filter: drop-shadow(#b2b2b2 5px 5px 4px);
 }
