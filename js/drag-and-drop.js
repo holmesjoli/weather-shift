@@ -14,3 +14,30 @@ function drop(ev) {
     ev.target.appendChild(document.getElementById(data));
 }
 
+function addDefinitions() {
+
+    let container = d3.select("#drop-container");
+
+    d3.csv("data/terms.csv").then(function (data) {
+        console.log(data)
+
+        let groups = container.selectAll("div")
+            .data(data)
+            .join("g")
+            .attr("class", "drop-item")
+
+        groups
+            .append("p")
+            .attr("class", "term-description")
+            .text(d => d.description)
+
+        groups
+            .append("div")
+            .attr("class", "drop")
+            .attr("ondrop", "drop(event)")
+            .attr("ondragover", "allowDrop(event)")
+    });
+
+}
+
+addDefinitions();
