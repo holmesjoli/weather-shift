@@ -14,30 +14,63 @@ function drop(ev) {
     ev.target.appendChild(document.getElementById(data));
 }
 
-function addDefinitions() {
+
+function addTerms(data) {
+    let container = d3.select("#drag-container");
+
+    let groups = container.selectAll("div")
+        .data(data)
+        .join("g")
+        .attr("class", "drag-item")
+        .attr("id", d => "drag"+d.id)
+        .attr("draggable", "true")
+        .attr("ondragstart", "drag(event)");
+
+    groups
+        .append("div")
+        .attr("class", "term-name")
+        .text(d => d.name);
+
+    groups.
+        append("img")
+        .attr("src", "assets/images/ccef/Freezing-Rain.gif")
+
+
+//     <div id="drag1" class="drag" draggable="true" ondragstart="drag(event)">
+//     <img src="assets/images/ccef/Freezing-Rain.gif">
+// </div>
+}
+
+function addDefinitions(data) {
 
     let container = d3.select("#drop-container");
 
-    d3.csv("data/terms.csv").then(function (data) {
-        console.log(data)
+    let groups = container.selectAll("div")
+        .data(data)
+        .join("g")
+        .attr("class", "drop-item")
 
-        let groups = container.selectAll("div")
-            .data(data)
-            .join("g")
-            .attr("class", "drop-item")
+    groups
+        .append("p")
+        .attr("class", "term-description")
+        .text(d => d.description);
 
-        groups
-            .append("p")
-            .attr("class", "term-description")
-            .text(d => d.description)
-
-        groups
-            .append("div")
-            .attr("class", "drop")
-            .attr("ondrop", "drop(event)")
-            .attr("ondragover", "allowDrop(event)")
-    });
+    groups
+        .append("div")
+        .attr("class", "drop")
+        .attr("ondrop", "drop(event)")
+        .attr("ondragover", "allowDrop(event)");
 
 }
 
-addDefinitions();
+function main() {
+
+    d3.csv("data/terms.csv").then(function (data) {
+
+        addTerms(data);
+        addDefinitions(data);
+    
+    });
+}
+
+main();

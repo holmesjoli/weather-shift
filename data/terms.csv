@@ -1,13 +1,13 @@
-﻿name,description,meterology_term
-Tropical cyclone,"A low-pressure system that forms over tropical waters with swirling winds. Hurricanes, typhoons, and cyclones fall under this category. The difference between those three types of storms is geographical.",TRUE
-Bomb Cyclone,A rapid pressure drop in a low-pressure air mass resulting in a pressure gradient where winds pick up sharply,TRUE
-Bombogenesis/Cyclogenesis,An atmospheric process where barometric pressure drops suddenly leading to the createion of a bomb cyclone,TRUE
-Atmospheric River,Describes regions in the atmosphere that transport moisture from the tropics to northern latitudes,TRUE
-Evaporative Demand,"A cyclical process where ground dries out more quickly in areas with high sun exposure and warmer temperatures. Warmer group releases more heat causing a ""thirstier"" environment.",TRUE
-Supercell,"A destructive type of thunderstorm defined by its powerful, rotating winds, sometimes resulting in tornadoes",TRUE
-Snowmaggedon/Snowpocalypse,A huge dump of snow creating blizzard-like conditions,FALSE
-Polar Vortex,"Is a large area of low pressure and cold air surrounding both of the Earth’s poles. It is a seasonal phenomenon, which is weaker in summer and stronger in winter. The term ‘vortex’ refers to the counterclockwise flow of air that helps keep the colder air near the poles.",TRUE
-Flash Drought,A period of abnormally high temperatures can lead to this weather phenomenon where high evaporation rates then lead to intense downpours,TRUE
-Derecho,A fast moving complex of thunderstorms,TRUE
-ARkStorm,"An apocalyptic megastorm named in reference to the Noachian, biblical flood",TRUE
-Pineapple Express,A type of atmospheric river where moisture builds up in the tropical Pacific,TRUE
+﻿id,name,description,meterology_term
+1,Tropical cyclone,"A low-pressure system that forms over tropical waters with swirling winds. Hurricanes, typhoons, and cyclones fall under this category. The difference between those three types of storms is geographical.",TRUE
+2,Bomb Cyclone,A rapid pressure drop in a low-pressure air mass resulting in a pressure gradient where winds pick up sharply,TRUE
+3,Bombogenesis/Cyclogenesis,An atmospheric process where barometric pressure drops suddenly leading to the createion of a bomb cyclone,TRUE
+4,Atmospheric River,Describes regions in the atmosphere that transport moisture from the tropics to northern latitudes,TRUE
+5,Evaporative Demand,"A cyclical process where ground dries out more quickly in areas with high sun exposure and warmer temperatures. Warmer group releases more heat causing a ""thirstier"" environment.",TRUE
+6,Supercell,"A destructive type of thunderstorm defined by its powerful, rotating winds, sometimes resulting in tornadoes",TRUE
+7,Snowmaggedon/Snowpocalypse,A huge dump of snow creating blizzard-like conditions,FALSE
+8,Polar Vortex,"Is a large area of low pressure and cold air surrounding both of the Earth’s poles. It is a seasonal phenomenon, which is weaker in summer and stronger in winter. The term ‘vortex’ refers to the counterclockwise flow of air that helps keep the colder air near the poles.",TRUE
+9,Flash Drought,A period of abnormally high temperatures can lead to this weather phenomenon where high evaporation rates then lead to intense downpours,TRUE
+10,Derecho,A fast moving complex of thunderstorms,TRUE
+11,ARkStorm,"An apocalyptic megastorm named in reference to the Noachian, biblical flood",TRUE
+12,Pineapple Express,A type of atmospheric river where moisture builds up in the tropical Pacific,TRUE

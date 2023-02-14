@@ -57,7 +57,7 @@ p {
     border: 1px solid black;
 }
 
-.drag {
+.drag-item {
     filter: drop-shadow(rgb(255, 116, 90) 10px 5px 4px);
     border-style: outset;
     border-width: 5px;
