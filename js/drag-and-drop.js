@@ -34,14 +34,10 @@ function addDefinitions() {
         groups
             .append("div")
             .attr("class", "drop")
-
+            .attr("ondrop", "drop(event)")
+            .attr("ondragover", "allowDrop(event)")
     });
 
 }
-
-{/* <div id="drop1" class="drop-item">
-                            <p>Sorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                        </div> */}
 
 addDefinitions();
