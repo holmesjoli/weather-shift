@@ -39,7 +39,7 @@ p {
 #drag-container {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 10px;
 }
 
@@ -52,4 +52,5 @@ p {
 .drop-item {
     display: grid;
     grid-template-columns: 1fr minmax(150px, 25%);
+    min-height: 100px;
 }
