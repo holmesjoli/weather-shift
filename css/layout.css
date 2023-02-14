@@ -33,6 +33,7 @@ p {
     display: flex;
     flex-direction: column;
     margin: 10px 100px;
+    padding: 10px;
 }
 
 .drop-container {
@@ -43,4 +44,7 @@ p {
 .drop-item {
     display: flex;
     flex-direction: row;
+}
+.term-description {
+    width: 60%;
 }
