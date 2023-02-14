@@ -28,7 +28,7 @@ function addTerms(data) {
 
     groups
         .append("img")
-        .attr("src", "assets/images/ccef/Freezing-Rain.gif")
+        .attr("src", d => `assets/images/ccef/${d.gif}.gif`)
 
     groups
         .append("div")
