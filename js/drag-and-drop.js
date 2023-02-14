@@ -27,13 +27,13 @@ function addTerms(data) {
         .attr("ondragstart", "drag(event)");
 
     groups
+        .append("img")
+        .attr("src", "assets/images/ccef/Freezing-Rain.gif")
+
+    groups
         .append("div")
         .attr("class", "term-name")
         .text(d => d.name);
-
-    groups
-        .append("img")
-        .attr("src", "assets/images/ccef/Freezing-Rain.gif")
 }
 
 //
