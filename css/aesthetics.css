@@ -34,12 +34,12 @@ h2 {
 p {
     padding: 20px 50px;
     background-color: rgb(255, 255, 255, .25);
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 #audio {
     border: 2px solid #FF9E8C;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     padding: 5px;
     background-color: #FAFAFA;
 }
@@ -58,16 +58,23 @@ p {
 }
 
 .drag {
-    border: 1px solid #FF9E8C;
-    background-color: #FFEEEB;
-    color: #FF745A;
-    border-radius: 10px;
+    /* border: 1px solid #FF9E8C; */
+    /* background-color: #FFEEEB; */
+    /* color: #FF745A; */
+    /* border-radius: 10px; */
+    filter: drop-shadow(rgb(255, 116, 90) 10px 5px 4px);
+    border-style: outset;
+    border-width: 5px;
+    height: 100%;
+    /* width: 100%; */
+    background: #ff5838;
+    border-color: #ff5838;
 }
 
 .drop {
     background-color: #F4F4F4;
     border: 1px dashed #FF9E8C;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .drop-item p {
