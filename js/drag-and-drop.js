@@ -5,7 +5,6 @@ function allowDrop(ev) {
 
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
-    // console.log(ev.target.id)
 }
 
 function drop(ev) {
@@ -23,8 +22,6 @@ function drop(ev) {
         ev.target.classList.add("incorrect");
         var audio = new Audio('../assets/audio/080047_lose_funny_retro_video-game-80925.mp3');
         audio.play();
-        nIncorrect += 1;
-        // console.log(nIncorrect)
     }
 }
 
@@ -91,15 +88,12 @@ function addDefinitions(data) {
         .attr("id", d => `drag-drop-${d.id}`)
         .attr("ondrop", "drop(event)")
         .attr("ondragover", "allowDrop(event)")
-        // .text("drop here")
 }
 
 function main() {
 
     d3.csv("data/terms.csv").then(function (data) {
         data = data.slice(0, 4);
-        let nIncorrect = 0;
-
 
         addTerms(data);
         addDefinitions(data);
