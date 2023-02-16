@@ -1,7 +1,7 @@
 ﻿id,name,description,meterology_term,folder,gif
 1,Tropical cyclone,"A low-pressure system that forms over tropical waters with swirling winds. Hurricanes, typhoons, and cyclones fall under this category. The difference between those three types of storms is geographical.",TRUE,rcrf,heavyrain
 2,Bomb Cyclone,A rapid pressure drop in a low-pressure air mass resulting in a pressure gradient where winds pick up sharply,TRUE,ccef,Windy
-3,Bombogenesis/Cyclogenesis,An atmospheric process where barometric pressure drops suddenly leading to the createion of a bomb cyclone,TRUE,rcrf,heavyrain
+3,Bombogenesis/Cyclogenesis,An atmospheric process where barometric pressure drops suddenly leading to the creation of a bomb cyclone,TRUE,rcrf,heavyrain
 4,Atmospheric River,Describes regions in the atmosphere that transport moisture from the tropics to northern latitudes,TRUE,rcrf,heavyrain
 5,Evaporative Demand,"A cyclical process where ground dries out more quickly in areas with high sun exposure and warmer temperatures. Warmer group releases more heat causing a ""thirstier"" environment.",TRUE,rcrf,hot
 6,Supercell,"A destructive type of thunderstorm defined by its powerful, rotating winds, sometimes resulting in tornadoes",TRUE,ccef,Freezing-Rain
