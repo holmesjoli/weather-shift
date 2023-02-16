@@ -5,6 +5,7 @@ function allowDrop(ev) {
 
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
+    console.log(ev.target.id)
 }
 
 function drop(ev) {
@@ -27,7 +28,7 @@ function shuffleArray(array) {
 
 // addTerms
 // automatically add terms to the html page
-function addTerms(data) {
+function addTerms(data) { 
     let container = d3.select("#drag-container");
 
     let rowi = Array(data.length).fill(0).map(Number.call, Number);

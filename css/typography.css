@@ -19,6 +19,11 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Mozart';
+    src: url('../assets/fonts/MozartNbp-93Ey.ttf');
+}
+
 body {
     font-family: system-ui, sans-serif;
 }
@@ -36,4 +41,9 @@ h2 {
     font-size: 2rem;
     margin-right: 3rem;
     color: #FEE36E;
+}
+
+.term-name {
+    font-family: Mozart;
+    font-size: 1.5rem;
 }
