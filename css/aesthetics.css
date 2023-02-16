@@ -74,12 +74,14 @@ p {
 .term-name {
     font-weight: bold;
     padding: 5px;
+    inline-size: 140px;
+    overflow-wrap: break-word;
 }
 
 .term-description {
     background-color: #FAFAFA;
     color: #000000;
-    margin: 5px;
+    margin: 5px 0;
     filter: drop-shadow(#b2b2b2 5px 5px 4px);
 }
 

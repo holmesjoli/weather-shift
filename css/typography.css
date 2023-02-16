@@ -43,7 +43,16 @@ h2 {
     color: #FEE36E;
 }
 
+h3 {
+    font-family: Mozart;
+    font-size: 2.5rem;
+    color: #FEE36E;
+    margin: 5px 20px;
+    letter-spacing: .7px;
+}
+
 .term-name {
     font-family: Mozart;
     font-size: 1.5rem;
+    letter-spacing: .7px;
 }

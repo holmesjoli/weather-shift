@@ -40,7 +40,7 @@ p {
 #drag-container {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 23.5%));
     padding: 20px;
 }
 
@@ -54,7 +54,7 @@ p {
     display: grid;
     grid-template-columns: 1fr minmax(150px, 25%);
     min-height: 100px;
-    margin: 5px;
+    margin: 5px 0;
 }
 
 img {
