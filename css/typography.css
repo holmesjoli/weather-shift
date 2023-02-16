@@ -25,10 +25,14 @@ body {
 
 h1 {
     font-family: Star300;
-    font-size: 2rem;
+    font-size: 4rem;
+    color: #FEE36E;
+    margin-left: 5rem;
+    margin-top: 1rem;
 }
 
 h2 {
     font-family: Star300Outline;
-    font-size: 1.3rem;
+    font-size: 2rem;
+    margin-right: 3rem;
 }

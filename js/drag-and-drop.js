@@ -25,7 +25,8 @@ function shuffleArray(array) {
     }
 }
 
-//
+// addTerms
+// automatically add terms to the html page
 function addTerms(data) {
     let container = d3.select("#drag-container");
 
@@ -45,7 +46,6 @@ function addTerms(data) {
         .attr("draggable", "true")
         .attr("ondragstart", "drag(event)");
 
-    // console.log(data)
     groups
         .append("img")
         .attr("src", d => `assets/images/${d.folder}/${d.gif}.gif`)
@@ -56,7 +56,7 @@ function addTerms(data) {
         .text(d => d.name);
 }
 
-//
+// automatically added definitions to the html page
 function addDefinitions(data) {
 
     let container = d3.select("#drop-container");
@@ -75,16 +75,15 @@ function addDefinitions(data) {
         .append("div")
         .attr("class", "drop")
         .attr("ondrop", "drop(event)")
-        .attr("ondragover", "allowDrop(event)");
+        .attr("ondragover", "allowDrop(event)")
+        // .text("drop here")
 }
 
 function main() {
 
     d3.csv("data/terms.csv").then(function (data) {
-
         addTerms(data);
         addDefinitions(data);
-    
     });
 }
 

@@ -7,13 +7,14 @@ body {
 header {
     margin: 15px 15px 0px 15px;
     padding: 30px 20px;
+    padding-bottom: 0;
     display: flex; 
     flex-direction: row;
 }
 
 main {
     margin: 0 15px;
-    padding: 30px 20px;
+    padding: 0rem 4rem;
 }
 
 h2 {
@@ -53,6 +54,7 @@ p {
     display: grid;
     grid-template-columns: 1fr minmax(150px, 25%);
     min-height: 100px;
+    margin: 5px;
 }
 
 img {
