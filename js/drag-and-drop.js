@@ -95,6 +95,8 @@ function addDefinitions(data) {
 function main() {
 
     d3.csv("data/terms.csv").then(function (data) {
+        data = data.slice(0, 4);
+
         addTerms(data);
         addDefinitions(data);
     });
