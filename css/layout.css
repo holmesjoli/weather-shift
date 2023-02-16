@@ -21,7 +21,7 @@ h2 {
 
 p {
     margin: 0;
-    padding: 20px 30px;
+    padding: 10px 20px;
 }
 
 .content {
@@ -52,7 +52,7 @@ p {
 
 .drop-item {
     display: grid;
-    grid-template-columns: 1fr minmax(150px, 25%);
+    grid-template-columns: minmax(250px, 70%) minmax(150px, 30%);
     min-height: 100px;
     margin: 5px 0;
 }

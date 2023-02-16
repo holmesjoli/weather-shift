@@ -66,9 +66,11 @@ p {
 
 .drop {
     background-color: #eaeaea;
-    border: 4px dashed #2324E1;
+    /* border: 4px dashed #2324E1; */
+    border-color: #2324E1;
     border-style: inset;
     min-height: 55px;
+    margin-left: 10px;
 }
 
 .term-name {
