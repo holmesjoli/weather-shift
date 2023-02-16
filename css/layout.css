@@ -21,17 +21,19 @@ h2 {
 
 p {
     margin: 0;
+    padding: 20px 30px;
 }
 
 .content {
     min-height: 100vh;
     padding: 15px;
+    display: grid;
+    grid-template-columns: minmax(150px, 35%) 1fr;
 }
 
 .dnd {
     display: flex;
     flex-direction: column;
-    margin: 10px 100px;
     padding: 10px;
 }
 
