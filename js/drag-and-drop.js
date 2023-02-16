@@ -17,10 +17,13 @@ function drop(ev) {
 
     if (data === ev.target.getAttribute("id")) {
         ev.target.classList.add("correct");
+        var audio = new Audio('../assets/audio/video-game-powerup-38065.mp3');
+        audio.play();
     } else {
         ev.target.classList.add("incorrect");
+        var audio = new Audio('../assets/audio/080047_lose_funny_retro_video-game-80925.mp3');
+        audio.play();
     }
-
 }
 
 // shuffle Array
