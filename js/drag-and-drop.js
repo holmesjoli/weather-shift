@@ -5,7 +5,7 @@ function allowDrop(ev) {
 
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
-    console.log(ev.target.id)
+    // console.log(ev.target.id)
 }
 
 function drop(ev) {
@@ -13,6 +13,14 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     console.log(data)
     ev.target.appendChild(document.getElementById(data));
+    console.log(ev.target.getAttribute("id"))
+
+    if (data === ev.target.getAttribute("id")) {
+        ev.target.classList.add("correct");
+    } else {
+        ev.target.classList.add("incorrect");
+    }
+
 }
 
 // shuffle Array
@@ -43,7 +51,7 @@ function addTerms(data) {
         .data(data2)
         .join("g")
         .attr("class", "drag-item")
-        .attr("id", d => "drag"+d.id)
+        .attr("id", d => `drag-drop-${d.id}`)
         .attr("draggable", "true")
         .attr("ondragstart", "drag(event)");
 
@@ -75,6 +83,7 @@ function addDefinitions(data) {
     groups
         .append("div")
         .attr("class", "drop")
+        .attr("id", d => `drag-drop-${d.id}`)
         .attr("ondrop", "drop(event)")
         .attr("ondragover", "allowDrop(event)")
         // .text("drop here")
