@@ -51,22 +51,30 @@ p {
     filter: drop-shadow(#EC7EAB 5px 5px 5px);
     border-style: outset;
     border-width: 5px;
-    /* height: 100%; */
     background: #EC7EAB;
     border-color: #EA3B4A;
     display: flex;
     flex-direction: row;
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
 }
 
-.drag-item:hover,
-.drop:hover {
+.drag-item:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.drag-item:hover {
     border-color: #2324E1;
 }
 
 .drop {
-    background-color: #eaeaea;
-    /* min-height: 110px; */
+    background-color: #151515;
     margin-left: 10px;
+    border: 1px dashed #63CCE1;
 }
 
 .drop-item {
@@ -83,9 +91,7 @@ p {
 .term-description {
     background-color: #000;
     color: #fff;
-    /* border: 3px solid #63CCE1; */
     margin: 5px 0;
-    /* filter: drop-shadow(#b2b2b2 5px 5px 4px); */
 }
 
 .correct {
@@ -96,16 +102,3 @@ p {
     background-color: red;
 }
 
-.drag-item {
-    cursor: move; /* fallback if grab cursor is unsupported */
-    cursor: grab;
-    cursor: -moz-grab;
-    cursor: -webkit-grab;
-}
-
-/* (Optional) Apply a "closed-hand" cursor during drag operation. */
-.drag-item:active {
-    cursor: grabbing;
-    cursor: -moz-grabbing;
-    cursor: -webkit-grabbing;
-}
