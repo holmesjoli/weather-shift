@@ -38,9 +38,6 @@ function drop(ev) {
             .select("#game-result")
             .text(`Game Over ${nCorrect}/${totalR}`)
     }
-
-    console.log(n, nCorrect)
-
 }
 
 // shuffle Array
