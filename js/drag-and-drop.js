@@ -7,26 +7,40 @@ function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
 }
 
+let nCorrect = 0;
+let n = 0;
+let totalR; 
+
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
-    // console.log(data)
     ev.target.appendChild(document.getElementById(data));
-    console.log(ev.target.getAttribute("id"))
 
     if (data === ev.target.getAttribute("id")) {
         ev.target.classList.add("correct");
-        console.log(ev.dataTransfer)
-        // data.classList.add("correct");
         var audio = new Audio('../assets/audio/video-game-powerup-38065.mp3');
         audio.play();
+        nCorrect += 1;
+        n += 1;
     } else {
         ev.target.classList.add("incorrect");
-        console.log(ev.dataTransfer)
-        // data.classList.add("incorrect");
         var audio = new Audio('../assets/audio/080047_lose_funny_retro_video-game-80925.mp3');
         audio.play();
+        n +=1;
     }
+
+    if (n === 4) {
+
+        var audio = new Audio('../assets/audio/victory-96688.mp3');
+        audio.play();
+
+        d3
+            .select("#game-result")
+            .text(`Game Over ${nCorrect}/${totalR}`)
+    }
+
+    console.log(n, nCorrect)
+
 }
 
 // shuffle Array
@@ -99,8 +113,11 @@ function main() {
     d3.csv("data/terms.csv").then(function (data) {
         data = data.slice(0, 4);
 
+        totalR = data.length;
+
         addTerms(data);
         addDefinitions(data);
+
     });
 }
 

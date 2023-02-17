@@ -64,3 +64,12 @@ footer {
     font-family: Mozart;
     letter-spacing: .7px;
 }
+
+#game-result {
+    font-family: Mozart;
+    font-size: 2rem;
+    color: #FEE36E;
+    margin: 5px 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
