@@ -48,11 +48,13 @@ h3 {
     font-size: 2.5rem;
     color: #FEE36E;
     margin: 5px 20px;
-    letter-spacing: .7px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .term-name {
     font-family: Mozart;
     font-size: 1.5rem;
     letter-spacing: .7px;
+    text-transform: uppercase;
 }

@@ -10,16 +10,20 @@ function drag(ev) {
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
-    console.log(data)
+    // console.log(data)
     ev.target.appendChild(document.getElementById(data));
     console.log(ev.target.getAttribute("id"))
 
     if (data === ev.target.getAttribute("id")) {
         ev.target.classList.add("correct");
+        console.log(ev.dataTransfer)
+        // data.classList.add("correct");
         var audio = new Audio('../assets/audio/video-game-powerup-38065.mp3');
         audio.play();
     } else {
         ev.target.classList.add("incorrect");
+        console.log(ev.dataTransfer)
+        // data.classList.add("incorrect");
         var audio = new Audio('../assets/audio/080047_lose_funny_retro_video-game-80925.mp3');
         audio.play();
     }
