@@ -50,6 +50,11 @@ p {
     padding: 20px;
 }
 
+.drag-item {
+    margin: 5px;
+    height: 65px;
+}
+
 .drop-item {
     display: grid;
     grid-template-columns: minmax(250px, 70%) minmax(150px, 30%);
