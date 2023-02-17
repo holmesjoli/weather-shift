@@ -45,7 +45,7 @@ h2 {
 
 h3 {
     font-family: Mozart;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     color: #FEE36E;
     margin: 5px 20px;
     letter-spacing: 1px;
@@ -57,4 +57,10 @@ h3 {
     font-size: 1.5rem;
     letter-spacing: .7px;
     text-transform: uppercase;
+}
+
+footer {
+    font-size: 1.3rem;
+    font-family: Mozart;
+    letter-spacing: .7px;
 }
