@@ -1,7 +1,7 @@
 ﻿id,name,description,meterology_term,folder,gif
 1,Tropical Cyclone,"A low-pressure system that forms over tropical waters with swirling winds. Hurricanes, typhoons, and cyclones are regional names for this  type of storm.",TRUE,rcrf,heavyrain
 2,Bomb Cyclone,A storm that rapidly strengthens in 24 hours.,FALSE,ccef,Windy
-3,Bombogenesis/Cyclogenesis,An atmospheric process where barometric pressure, measured in millibars, drops rapidly leading to the creation of a bomb cyclone. The intensity needed for bombogenesis classification varies by latitude.,TRUE,rcrf,heavyrain
+3,Bombogenesis/Cyclogenesis,An atmospheric process where barometric pressure,TRUE,rcrf,heavyrain
 4,Atmospheric River,Long and narrow regions in the atmosphere that transport most of the moisture outside of the tropics.,TRUE,rcrf,heavyrain
 5,Evaporative Demand,"Quantifies water loss from a surface driven by atmospheric factors including temperature, wind speed, humidity, and cloud cover.",TRUE,rcrf,hot
 6,Supercell,"A destructive type of thunderstorm defined by its powerful, upward rotating winds which sometimes result in tornadoes.",TRUE,ccef,Freezing-Rain
@@ -9,5 +9,5 @@
 8,Polar Vortex,"A large area of cold low pressure air flowing counterclockwise around both of the Earth’s poles. It helps keep the colder air near the poles and is a seasonal phenomenon, which is weaker in summer and stronger in winter.",TRUE,ccef,Windy
 9,Flash Drought,A rapid intensification of drought conditions characterized by lower-than-normal precipitation and abnormally high temperatures.,TRUE,rcrf,heavyrain
 10,Derecho,A widespread and long-lived wind storm that is associated with a band of rapidly moving thunderstorms. Capable of producing damage similar to tornadoes.,TRUE,ccef,Thunder
-11,ARkStorm,"A theoretical thousand-year storm believed to have the ability to flood California’s Central Valley.",FALSE,rcrf,heavyrain
+11,ARkStorm,A theoretical thousand-year storm believed to have the ability to flood California’s Central Valley.,FALSE,rcrf,heavyrain
 12,Pineapple Express,A strong atmospheric river that brings moisture from the Pacific Ocean around Hawaii to the West Coast.,FALSE,rcrf,heavyrain
